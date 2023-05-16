@@ -53,13 +53,13 @@ switch (random){
 const content = document.getElementById('content');
 const hiden = document.getElementById('hiden');
 function lost() {
-    content.innerHTML = '&#10006;<h3 id="hiden-text">U Lost</h3>';
+    content.innerHTML = '&#10006;<h3 id="hiden-text">You Lost</h3>';
     hiden.style.display = "block";
     content.style.color = "red";
     document.getElementById('hiden-text').style.color = "red";}
 
 function won() {
-    content.innerHTML = '&#127942;<h3 id="hiden-text">U won</h3>';
+    content.innerHTML = '&#127942;<h3 id="hiden-text">You won</h3>';
     hiden.style.display = "block";}
 
 function tie() {
