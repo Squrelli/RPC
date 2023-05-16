@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all .5s ease;
+    font-family: MyFont1;}
+@font-face {
+    font-family: MyFont1;
+    src: url(./DidactGothic-Regular.ttf);}
+body{
+    background-color: #333;}
+.container{
+    width: 90vw;
+    margin: auto;}
+h1,h2{
+    width: 100%;
+    text-align: center;}
+h1{
+    margin-top: 20px;
+    color: #00B0B0;
+    font-size: 6vw;
+    margin-bottom: 10px;}
+h2{
+    color: #B39800;
+    font-size: 5vw;
+    margin-bottom: 20px;}
+.sellect img{
+    width: 25vw;
+    height: 25vw;
+    margin: 20px 2vw;
+    cursor: pointer;
+    filter: brightness(70%);
+    border: 0.5vw solid #008C8C;
+    float: left;}
+.sellect img:hover{
+    filter: brightness(100%);
+    border: 0.5vw solid #B39800;
+    transform: scale(1.2);}
+#hiden{
+    display: none;
+    margin-top: -20px;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    cursor: pointer;}
+#hiden #content{
+    width: max-content;
+    position: absolute;
+    font-size: 400px;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);}
+#hiden #content #hiden-text{
+    font-size: 50px;
+    text-align: center;
+    color: #B39800;
+    font-family: sans-serif;}
+@media only screen and (max-width: 650px){
+    .sellect img{
+        width: 90vw;
+        height: 90vw;
+        float: none;
+        border: 0.5vw solid #fff;
+        margin: auto;
+        justify-content: center;
+        margin: 20px 0px;}
+    .sellect img:hover{
+        transform: scale(1.05);}}
